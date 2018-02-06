@@ -1,6 +1,7 @@
 const BASE_URL = 'http://api.reactprototypes.com';
-const API_KEY = '?key=testuser1234';
+const API_KEY = '?key=testuser1234'; //query string..
 
+//the request
 axios.get(`${BASE_URL}/todos${API_KEY}`).then(resp => {
     const { todos } = resp.data;
     const table = $('table tbody');
